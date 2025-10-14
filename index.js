@@ -10,4 +10,6 @@ function exampleFunction() {
   return `This function does nothing.${unusedVariable}`
 }
 
-console.log(exampleFunction())
+const exFunc = exampleFunction()
+
+console.log(exFunc)
