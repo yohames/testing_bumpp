@@ -5,7 +5,16 @@
   "author": "",
   "license": "ISC",
   "keywords": [],
-  "main": "index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsdown",
     "lint": "eslint",
@@ -30,6 +39,7 @@
     "eslint-plugin-format": "^1.0.2",
     "lint-staged": "^16.2.4",
     "simple-git-hooks": "^2.13.1",
+    "tsdown": "^0.15.7",
     "tsx": "^4.20.6",
     "typescript": "^5.9.3",
     "vitest": "^3.2.4"
