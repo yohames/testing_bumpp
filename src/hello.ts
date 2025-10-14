@@ -1,3 +1,3 @@
-export function hello() {
-  console.log('Hello tsdown!')
+export function hello(name: string = 'World'): string {
+  return `Hello ${name}!`
 }
